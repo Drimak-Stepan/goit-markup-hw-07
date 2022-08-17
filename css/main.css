@@ -669,7 +669,7 @@ main {
   background-color: var(--active-color);
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
@@ -681,20 +681,19 @@ main {
   color: var(--first-title-color);
 }
 
-.clients-items {
+.clients__list {
   display: flex;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
-
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -705,9 +704,7 @@ main {
   fill: #AFB1B8;
   transition: border var(--transition-only), fill var(--transition-only);
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--active-color);
   fill: var(--active-color);
   outline: transparent;
