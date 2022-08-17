@@ -4,19 +4,19 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color:  #2F303A;
+
+    &>.container{
+        display: flex;
+        align-items: baseline;
+    }
 }
 
-.basement>.container{
-    display: flex;
-    align-items: baseline;
-}
-
-.basement-contact{
+.contact{
     display: block;
     margin-right: 70px;
 }
 
-.basement-logo{
+.basement--logo{
     display: inline-block;
     margin-bottom: 20px;
     font-family:Raleway, sans-serif;
@@ -30,18 +30,17 @@
     border-radius: 4px;
     outline-color: transparent;
     transition: outline-color var(--transition-only);
-}
-.basement-logo:focus{
-    outline-color:var(--second-background);
-}
-.basement-logo span{    
-    color:var(--active-color);
+
+    &:focus{outline-color:var(--second-background);    }
+
+    & span{color:var(--active-color);    }
 }
 
-.basement-item:not(:last-child){
+
+.contact__item:not(:last-child){
     margin-bottom: 9px;}
 
-.basement-map{
+.contact__map{
     display: inline-block;
     font-style: normal;
     font-weight: 400;
@@ -49,10 +48,16 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    transition: color var(--transition-only);}
+    transition: color var(--transition-only);
 
-.basement-email,
-.basement-tel{
+    &:focus,
+    &:hover{
+        outline:transparent;
+        color: var(--active-color);}
+}
+
+.contact__email,
+.contact__tel{
     display: inline-block;
     font-style: normal;
     font-weight: 400;
@@ -61,25 +66,14 @@
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition-only);
+
+    &:focus,
+    &:hover{outline:transparent;
+        color: var(--active-color);}
 }
 
 
-.basement-email:focus,
-.basement-email:hover{
-    outline:transparent;
-    color: var(--active-color);
-}
-.basement-tel:focus,
-.basement-tel:hover{
-    outline:transparent;
-    color: var(--active-color);
-}
-.basement-map:focus,
-.basement-map:hover{
-    outline:transparent;
-    color: var(--active-color);}
-
-.basement-soc-title{
+.soc-footer__title{
     margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -90,12 +84,12 @@
     text-transform: uppercase;
     color:var(--first-background);
 }
-.basement-soc-list{
+.soc-footer__list{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.basement-soc-link{
+.soc-footer__link{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -105,37 +99,33 @@
     justify-content: center;
     fill:var(--first-background);
     transition: background-color var(--transition-only);
-}
 
-.basement-soc-link:hover, 
-.basement-soc-link:focus{
-    background-color:var(--active-color);
-    outline:transparent;
-}
+    &:hover, 
+    &:focus{
+        background-color:var(--active-color);
+        outline:transparent;}}
 
 
-.basement-form{
+.basement__form{
     display: block;
     margin-left: auto;
 }
 
-.input-suptitle{
+.basement__label{
     display: block;
-    margin-bottom: 20px;
-}
-.input-title{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--first-background);
+    margin-bottom: 20px;}
 
-}
+.basement__label--title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--first-background);}
 
-.bas-input{
+.basement__input{
     margin-right: 12px;
     padding: 15px 16px;
     width: 358px;
@@ -149,26 +139,27 @@
     cursor: pointer;
     outline: transparent;
     transition: border-color var(--transition-only);
-}
-.bas-input:focus{
-    border-color: var(--second-background);
-}
-.input-email{
-    display: flex;
-}
-.bas-input::placeholder{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+
+    &:focus{
+        border-color: var(--second-background);}
+
+    &::placeholder{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);}
 }
 
-.btn-send{
+.basement__email{
+    display: flex;
+}
+
+.basement__btn{
     display: flex;
     align-items: center;
     padding: 0px 28px;
@@ -188,16 +179,12 @@
     outline: 1px solid;
     outline-color: transparent;
     transition: background-color var(--transition-only), outline-color var(--transition-only);
-}
-.btn-send:hover,
-.btn-send:focus{
-    background-color:#188CE8;
 
-}
-.btn-send:focus{
-    outline-color: var(--second-background);}
+    &:hover,
+    &:focus{
+        background-color:#188CE8;
+}}
 
-
-.icon-send{
+.basement__btn--icon{
     margin-left: 10px;
 }

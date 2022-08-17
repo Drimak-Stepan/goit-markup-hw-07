@@ -797,18 +797,17 @@ main {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
-
 .basement > .container {
   display: flex;
   align-items: baseline;
 }
 
-.basement-contact {
+.contact {
   display: block;
   margin-right: 70px;
 }
 
-.basement-logo {
+.basement--logo {
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway, sans-serif;
@@ -823,20 +822,18 @@ main {
   outline-color: transparent;
   transition: outline-color var(--transition-only);
 }
-
-.basement-logo:focus {
+.basement--logo:focus {
   outline-color: var(--second-background);
 }
-
-.basement-logo span {
+.basement--logo span {
   color: var(--active-color);
 }
 
-.basement-item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.basement-map {
+.contact__map {
   display: inline-block;
   font-style: normal;
   font-weight: 400;
@@ -846,9 +843,13 @@ main {
   color: #FFFFFF;
   transition: color var(--transition-only);
 }
+.contact__map:focus, .contact__map:hover {
+  outline: transparent;
+  color: var(--active-color);
+}
 
-.basement-email,
-.basement-tel {
+.contact__email,
+.contact__tel {
   display: inline-block;
   font-style: normal;
   font-weight: 400;
@@ -858,26 +859,14 @@ main {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-only);
 }
-
-.basement-email:focus,
-.basement-email:hover {
+.contact__email:focus, .contact__email:hover,
+.contact__tel:focus,
+.contact__tel:hover {
   outline: transparent;
   color: var(--active-color);
 }
 
-.basement-tel:focus,
-.basement-tel:hover {
-  outline: transparent;
-  color: var(--active-color);
-}
-
-.basement-map:focus,
-.basement-map:hover {
-  outline: transparent;
-  color: var(--active-color);
-}
-
-.basement-soc-title {
+.soc-footer__title {
   margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -889,13 +878,13 @@ main {
   color: var(--first-background);
 }
 
-.basement-soc-list {
+.soc-footer__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.basement-soc-link {
+.soc-footer__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -906,24 +895,22 @@ main {
   fill: var(--first-background);
   transition: background-color var(--transition-only);
 }
-
-.basement-soc-link:hover,
-.basement-soc-link:focus {
+.soc-footer__link:hover, .soc-footer__link:focus {
   background-color: var(--active-color);
   outline: transparent;
 }
 
-.basement-form {
+.basement__form {
   display: block;
   margin-left: auto;
 }
 
-.input-suptitle {
+.basement__label {
   display: block;
   margin-bottom: 20px;
 }
 
-.input-title {
+.basement__label--title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -934,7 +921,7 @@ main {
   color: var(--first-background);
 }
 
-.bas-input {
+.basement__input {
   margin-right: 12px;
   padding: 15px 16px;
   width: 358px;
@@ -949,16 +936,10 @@ main {
   outline: transparent;
   transition: border-color var(--transition-only);
 }
-
-.bas-input:focus {
+.basement__input:focus {
   border-color: var(--second-background);
 }
-
-.input-email {
-  display: flex;
-}
-
-.bas-input::placeholder {
+.basement__input::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -970,7 +951,11 @@ main {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.btn-send {
+.basement__email {
+  display: flex;
+}
+
+.basement__btn {
   display: flex;
   align-items: center;
   padding: 0px 28px;
@@ -991,16 +976,10 @@ main {
   outline-color: transparent;
   transition: background-color var(--transition-only), outline-color var(--transition-only);
 }
-
-.btn-send:hover,
-.btn-send:focus {
+.basement__btn:hover, .basement__btn:focus {
   background-color: #188CE8;
 }
 
-.btn-send:focus {
-  outline-color: var(--second-background);
-}
-
-.icon-send {
+.basement__btn--icon {
   margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
