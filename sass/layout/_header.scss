@@ -1,4 +1,30 @@
-.cap-logo{
+.cap{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--first-background);
+    border-bottom: 1px solid #ECECEC;
+
+    & > .cap__container {   display: flex;
+                            align-items: center;}
+
+    &__list{display: flex;}
+
+    &__item:not(:last-child){margin-right: 50px;}
+
+    &__itemtoo:not(:last-child){margin-right: 30px;}
+
+    &__listtoo{ display: flex;
+                margin-left: auto;}
+        
+    }
+
+.cap__logo{
     display: block;
     margin-right: 93px;
     padding-top: 24px;
@@ -14,45 +40,13 @@
     outline: 1px solid;
     outline-color:  transparent;
     transition:  outline-color var(--transition-only);
-}
 
-.cap-logo:focus{
-        outline-color:var(--active-color);
-    }
+    &:focus{ outline-color:var(--active-color);}
 
-.cap > .cap-container {
-    display: flex;
-    align-items: center;
-}
-.cap-list{
-    display: flex;
-}
-.cap-item:not(:last-child){
-    margin-right: 50px;
-}
-.cap-itemtoo:not(:last-child){
-    margin-right: 30px;
-}
+    & span{ color:var(--active-color);        }
+} 
 
-.cap{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    left: 0;
-    min-height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--first-background);
-    border-bottom: 1px solid #ECECEC;
-    }
-
-.cap-logo span{    
-    color:var(--active-color);
-}
-
-
-.cap-link{
+.cap__link{
     display: flex;
     align-items: center;
     padding: 32px 0;
@@ -62,21 +56,30 @@
     letter-spacing: 0.02em;
     color:var(--first-title-color);
     transition: color var(--transition-only);
-}
-.cap-link:hover,
-.cap-link:focus{
-    outline:transparent;
-    color: var(--active-color);
-}
 
-
-.cap-listtoo{
-    display: flex;
-    margin-left: auto;
+    &:hover,
+    &:focus{outline:transparent;
+            color: var(--active-color);}
 }
 
-.cap-email,
-.cap-tel{
+.cap__link--current{
+    position: relative;
+    color:var(--active-color);
+    
+    &::after {
+        position:absolute;
+        bottom: -1px;
+        left: 0px;
+        content: '';
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        display: block;
+        background-color: var(--active-color);
+    }}
+
+.cap__email,
+.cap__tel{
     display: flex;
     align-items: center;
     padding: 32px 0;
@@ -86,26 +89,18 @@
     letter-spacing: 0.02em;
     color:var(--accent-color);
     transition: color var(--transition-only);
-}
 
-.cap-email:focus,
-.cap-email:hover{outline:none;;
+    &:focus,
+    &:hover{outline:none;;
     color: var(--active-color);
-}
-.cap-tel:focus,
-.cap-tel:hover{outline:none;
-    color: var(--active-color);
-}
-.cap-email-icon,
-.cap-tel-icon{
+}}
+
+.cap__email--icon,
+.cap__tel--icon{
     margin-right: 10px;
     fill: currentColor;
     transition: fill var(--transition-only);
-}
 
-.cap-email-icon:hover,
-.cap-email-icon:focus,
-.cap-tel-icon:hover,
-.cap-tel-icon:focus{
-    fill:#2196F3;
+    &:focus,
+    &:hover{fill:#2196F3;}
 }
