@@ -1,0 +1,111 @@
+.cap-logo{
+    display: block;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family:Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    color:#000000;
+    border-radius: 4px;
+    outline: 1px solid;
+    outline-color:  transparent;
+    transition:  outline-color var(--transition-only);
+}
+
+.cap-logo:focus{
+        outline-color:var(--active-color);
+    }
+
+.cap > .cap-container {
+    display: flex;
+    align-items: center;
+}
+.cap-list{
+    display: flex;
+}
+.cap-item:not(:last-child){
+    margin-right: 50px;
+}
+.cap-itemtoo:not(:last-child){
+    margin-right: 30px;
+}
+
+.cap{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--first-background);
+    border-bottom: 1px solid #ECECEC;
+    }
+
+.cap-logo span{    
+    color:var(--active-color);
+}
+
+
+.cap-link{
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color:var(--first-title-color);
+    transition: color var(--transition-only);
+}
+.cap-link:hover,
+.cap-link:focus{
+    outline:transparent;
+    color: var(--active-color);
+}
+
+
+.cap-listtoo{
+    display: flex;
+    margin-left: auto;
+}
+
+.cap-email,
+.cap-tel{
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color:var(--accent-color);
+    transition: color var(--transition-only);
+}
+
+.cap-email:focus,
+.cap-email:hover{outline:none;;
+    color: var(--active-color);
+}
+.cap-tel:focus,
+.cap-tel:hover{outline:none;
+    color: var(--active-color);
+}
+.cap-email-icon,
+.cap-tel-icon{
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--transition-only);
+}
+
+.cap-email-icon:hover,
+.cap-email-icon:focus,
+.cap-tel-icon:hover,
+.cap-tel-icon:focus{
+    fill:#2196F3;
+}
