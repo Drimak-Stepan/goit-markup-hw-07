@@ -42,9 +42,9 @@
 
     &__title{
         margin-bottom: 12px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
+        font-family:$RobS;
+        font-style: $SN;
+        font-weight: $S7;
         font-size: 20px;
         line-height: 1.15;
         text-align: center;
@@ -54,9 +54,9 @@
     &__label{
             display: block;
             margin-bottom: 4px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
+            font-family: $RobS;
+            font-style: $SN;
+            font-weight: $S4;
             font-size: 12px;
             line-height: 1.17;
             letter-spacing: 0.01em;
@@ -128,9 +128,9 @@
     width: 100%;
     height: 120px;
     padding: 12px 16px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+    font-family: $RobS;
+    font-style: $SN;
+    font-weight: $S4;
     font-size: 12px;
     line-height: 1.17px;
     letter-spacing: 0.01em;
@@ -146,9 +146,9 @@
         border: 1px solid var(--active-color);}
 
     &::placeholder {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
+            font-family: $RobS;
+            font-style: $SN;
+            font-weight: $S4;
             font-size: 12px;
             line-height: 1.17px;
             letter-spacing: 0.01em;
@@ -166,7 +166,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Roboto';
+    font-family: $RobS;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -219,8 +219,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
+    font-style: $SN;
+    font-weight: $S7;
     font-size: 16px;
     line-height: 1.88;
     align-items: center;

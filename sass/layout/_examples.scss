@@ -9,7 +9,7 @@
         margin-right: auto;
         margin-left: auto;
         min-width: 366px;
-        font-weight: 700;
+        font-weight: $S7;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
@@ -22,9 +22,9 @@
     }
 
     &__text{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
+        font-family: $RobS;
+        font-style: $SN;
+        font-weight: $S7;
         font-size: 14px;
         line-height: 1.14;
         text-align: center;

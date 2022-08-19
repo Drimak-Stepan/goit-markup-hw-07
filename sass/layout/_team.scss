@@ -8,7 +8,7 @@
         margin-right: auto;
         margin-left: auto;
         min-width: 264px;
-        font-weight: 700;
+        font-weight: $S7;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
@@ -25,7 +25,7 @@
 
     &__subtitle{  
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: $S5;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
