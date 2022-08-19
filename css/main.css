@@ -365,10 +365,13 @@ main {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--first-title-color);
-  transition: color var(--transition-only);
+  border-radius: 4px;
+  outline: 1px solid;
+  outline-color: transparent;
+  transition: color var(--transition-only), outline-color var(--transition-only);
 }
-.cap__link:hover, .cap__link:focus {
-  outline: transparent;
+.cap__link:focus, .cap__link:hover {
+  outline-color: var(--active-color);
   color: var(--active-color);
 }
 
@@ -398,12 +401,15 @@ main {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  transition: color var(--transition-only);
+  border-radius: 4px;
+  outline: 1px solid;
+  outline-color: transparent;
+  transition: color var(--transition-only), outline-color var(--transition-only);
 }
 .cap__email:focus, .cap__email:hover,
 .cap__tel:focus,
 .cap__tel:hover {
-  outline: none;
+  outline-color: var(--active-color);
   color: var(--active-color);
 }
 

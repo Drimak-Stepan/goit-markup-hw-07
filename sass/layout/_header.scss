@@ -55,12 +55,14 @@
     line-height: 1.142;
     letter-spacing: 0.02em;
     color:var(--first-title-color);
-    transition: color var(--transition-only);
+    border-radius: 4px;
+    outline: 1px solid;
+    outline-color:  transparent;
+    transition: color var(--transition-only), outline-color var(--transition-only);
 
-    &:hover,
-    &:focus{outline:transparent;
-            color: var(--active-color);}
-}
+    &:focus,
+    &:hover{outline-color:var(--active-color);
+    color: var(--active-color); }}
 
 .cap__link--current{
     position: relative;
@@ -88,10 +90,13 @@
     line-height: 1.142;
     letter-spacing: 0.02em;
     color:var(--accent-color);
-    transition: color var(--transition-only);
+    border-radius: 4px;
+    outline: 1px solid;
+    outline-color:  transparent;
+    transition: color var(--transition-only), outline-color var(--transition-only);
 
     &:focus,
-    &:hover{outline:none;;
+    &:hover{outline-color:var(--active-color);
     color: var(--active-color);
 }}
 
@@ -102,5 +107,4 @@
     transition: fill var(--transition-only);
 
     &:focus,
-    &:hover{fill:#2196F3;}
-}
+    &:hover{fill:#2196F3;}}
