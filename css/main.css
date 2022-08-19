@@ -370,8 +370,11 @@ main {
   outline-color: transparent;
   transition: color var(--transition-only), outline-color var(--transition-only);
 }
-.cap__link:focus, .cap__link:hover {
+.cap__link:focus {
   outline-color: var(--active-color);
+  color: var(--active-color);
+}
+.cap__link:hover {
   color: var(--active-color);
 }
 
@@ -406,10 +409,13 @@ main {
   outline-color: transparent;
   transition: color var(--transition-only), outline-color var(--transition-only);
 }
-.cap__email:focus, .cap__email:hover,
-.cap__tel:focus,
-.cap__tel:hover {
+.cap__email:focus,
+.cap__tel:focus {
   outline-color: var(--active-color);
+  color: var(--active-color);
+}
+.cap__email:hover,
+.cap__tel:hover {
   color: var(--active-color);
 }
 

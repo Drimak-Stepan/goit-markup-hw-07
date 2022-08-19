@@ -60,9 +60,10 @@
     outline-color:  transparent;
     transition: color var(--transition-only), outline-color var(--transition-only);
 
-    &:focus,
-    &:hover{outline-color:var(--active-color);
-    color: var(--active-color); }}
+    &:focus{outline-color:var(--active-color);
+        color: var(--active-color); }
+
+    &:hover{color: var(--active-color); }}
 
 .cap__link--current{
     position: relative;
@@ -95,9 +96,10 @@
     outline-color:  transparent;
     transition: color var(--transition-only), outline-color var(--transition-only);
 
-    &:focus,
-    &:hover{outline-color:var(--active-color);
-    color: var(--active-color);
+    &:focus{outline-color:var(--active-color);
+        color: var(--active-color);}
+
+    &:hover{color: var(--active-color);
 }}
 
 .cap__email--icon,
